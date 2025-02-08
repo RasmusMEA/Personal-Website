@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './output.css';
+import './index.css';
+
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import FeaturesList from './components/FeaturesList';
+import FeaturesGrid from './components/FeaturesGrid';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Navbar />
+    <Hero />
+    <FeaturesList />
+    <FeaturesGrid />
   </React.StrictMode>
 );
 
