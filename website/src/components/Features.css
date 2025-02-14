@@ -1,22 +1,31 @@
 .project-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0.75rem;
+    padding: 1rem;
+
     justify-content: center;
+    justify-items: center;
+    align-items: start;
 
-    gap: 2rem;
-    
-    padding-top: 4rem;
-    padding-bottom: 8rem;
+    max-width: 62rem;
+    margin: 0 auto;
 
-    /* background-color: #212121; */
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
-.project-list h1 {
+@media only screen and (min-width: 640px) {
+    .project-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+h1 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.1;
     color: #ffffff;
-    margin-bottom: 2rem;
 
     width: 100%;
     text-align: center;
@@ -26,74 +35,60 @@
 }
 
 .project-listing {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    position: relative;
 
-    max-width: 90%;
-    max-height: 100%;
-
-    column-gap: 2rem;
-    padding: 2rem;
-    width: 1000px;
+    row-gap: 0.5rem;
+    padding: 1rem;
     
     border-radius: 15px;
-    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .project-listing:hover {
-    transform: scale(1.025);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 1);
+    transform: scale(1.0248);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
 }
 
 .project-listing img {
     position: relative;
     object-fit: cover;
 
-    width: 100%;
-    height: 100%;
-    
+    aspect-ratio: 16 / 9;
+
     border-radius: 12px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .project-listing h2 {
-    font-size: 1.825rem;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.25;
     color: #212121;
-    margin-bottom: 1rem;
 }
 
 .project-listing p {
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 400;
     color: #424242;
     text-align: left;
-    margin-bottom: 1.5rem;
 }
 
-.project-listing a {
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.75;
-    transition: all 0.3s ease;
-
-    padding: 0.5rem 1rem;
-
-    color: #ffffff;
-    background-color: #43A047;
-
-    border-radius: 8px;
+.project-description {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 0.25rem;
 }
 
-.project-listing a:hover {
-    background-color: #388E3C;
+.project-description .tags {
+    padding: unset;
+    padding-top: 0.25rem;
 }
 
 .feature-grid {
@@ -117,7 +112,6 @@
     align-items: center;
     overflow: hidden;
 
-    /* padding: 2rem; */
     width: 100%;
     height: 100%;
 

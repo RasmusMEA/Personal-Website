@@ -1,55 +1,160 @@
 import './Features.css';
+import './Common.css';
 
 function FeaturesList() {
     return (
-        <section class="project-list">
+        <section id="Projects">
             <h1> Latest Projects </h1>
-            <div class="project-listing">
-                <div>
-                    <h2> GPU-Based Real-Time Procedural Distribution of Vegetation </h2>
-                    <p> The AI product utilizes advanced NLP algorithms to understand and interpret human language,
-                        enabling it to accurately process and analyze text-based inputs.
-                    </p>
-                    <a class="inline-flex" href="/login"> Learn More </a>
-                </div>
-                <img loading="lazy" src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137" alt="Project Screenshot">
-                </img>
-            </div>
+            <div class="project-list">
+                <a class="project-listing" href="https://cuono.dev" target="_blank" rel="noreferrer">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137" alt="Project Screenshot"></img>
+                    <div class="img-overlay">
+                        <div class="round-buttons">
+                            <a href="https://cuono.dev" target="_blank" rel="noreferrer">
+                                <img src="https://cuono.dev/favicon.ico" alt="Project Icon"></img>
+                            </a>
+                            <a href="https://cuono.dev" target="_blank" rel="noreferrer">
+                                <img src="https://cuono.dev/favicon.ico" alt="Project Icon"></img>
+                            </a>
+                        </div>
+                        <div class="tags bottom">
+                            <span> AI </span>
+                            <span> NLP </span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h2> GPU-Based Real-Time Procedural Distribution of Vegetation </h2>
+                        <time dateTime="2021-09-01"> September 1, 2021 </time>
+                        <p> The AI product utilizes advanced NLP algorithms to understand and interpret human language,
+                            enabling it to accurately process and analyze text-based inputs.
+                        </p>
+                        <div class="tags">
+                            <span> AI </span>
+                            <span> NLP </span>
+                            <span> Text Analysis </span>
+                        </div>
+                    </div>
+                </a>
 
-            <div class="project-listing">
-                <img loading="lazy" src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137" alt="Project Screenshot">
-                </img>
-                <div>
-                    <h2> Aqua Box (Interactive Fluid Simulation in VR With a 1:1 Controller) </h2>
-                    <p> The AI product utilizes advanced NLP algorithms to understand and interpret human language,
-                        enabling it to accurately process and analyze text-based inputs.
-                    </p>
-                    <a class="inline-flex" href="/login"> Learn More </a>
-                </div>
-            </div>
+                <a class="project-listing" href="https://cuono.dev" target="_blank" rel="noreferrer">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137" alt="Project Screenshot"></img>
+                    <div class="img-overlay">
+                        <div class="round-buttons">
+                            <a href="https://cuono.dev" target="_blank" rel="noreferrer">
+                                <img src="https://cuono.dev/favicon.ico" alt="Project Icon"></img>
+                            </a>
+                            <a href="https://cuono.dev" target="_blank" rel="noreferrer">
+                                <img src="https://cuono.dev/favicon.ico" alt="Project Icon"></img>
+                            </a>
+                        </div>
+                        <div class="tags bottom">
+                            <span> AI </span>
+                            <span> NLP </span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h2> GPU-Based Real-Time Procedural Distribution of Vegetation </h2>
+                        <time dateTime="2021-09-01"> September 1, 2021 </time>
+                        <p> The AI product utilizes advanced NLP algorithms to understand and interpret human language,
+                            enabling it to accurately process and analyze text-based inputs.
+                        </p>
+                        <div class="tags">
+                            <span> AI </span>
+                            <span> NLP </span>
+                            <span> Text Analysis </span>
+                        </div>
+                    </div>
+                </a>
 
-            <div class="project-listing">
-                <div>
-                    <h2> Plane Panic! (Multiplayer PC Game Using Phones as Controllers) </h2>
-                    <p> The AI product utilizes advanced NLP algorithms to understand and interpret human language,
-                        enabling it to accurately process and analyze text-based inputs.
-                    </p>
-                    <a class="inline-flex" href="/login"> Learn More </a>
-                </div>
-                <img loading="lazy" src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137" alt="Project Screenshot">
-                </img>
-            </div>
+                <a class="project-listing" href="https://cuono.dev" target="_blank" rel="noreferrer">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137" alt="Project Screenshot"></img>
+                    <div class="img-overlay">
+                        <div class="round-buttons">
+                            <a href="https://cuono.dev" target="_blank" rel="noreferrer">
+                                <img src="https://cuono.dev/favicon.ico" alt="Project Icon"></img>
+                            </a>
+                            <a href="https://cuono.dev" target="_blank" rel="noreferrer">
+                                <img src="https://cuono.dev/favicon.ico" alt="Project Icon"></img>
+                            </a>
+                        </div>
+                        <div class="tags bottom">
+                            <span> AI </span>
+                            <span> NLP </span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h2> GPU-Based Real-Time Procedural Distribution of Vegetation </h2>
+                        <time dateTime="2021-09-01"> September 1, 2021 </time>
+                        <p> The AI product utilizes advanced NLP algorithms to understand and interpret human language,
+                            enabling it to accurately process and analyze text-based inputs.
+                        </p>
+                        <div class="tags">
+                            <span> AI </span>
+                            <span> NLP </span>
+                            <span> Text Analysis </span>
+                        </div>
+                    </div>
+                </a>
 
-            <div class="project-listing">
-                <img loading="lazy" src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137" alt="Project Screenshot">
-                </img>
-                <div>
-                    <h2> CozyRoads (Web Browser Game) </h2>
-                    <p> The AI product utilizes advanced NLP algorithms to understand and interpret human language,
-                        enabling it to accurately process and analyze text-based inputs.
-                    </p>
-                    <a class="inline-flex" href="/login"> Learn More </a>
-                </div>
+                <a class="project-listing" href="https://cuono.dev" target="_blank" rel="noreferrer">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137" alt="Project Screenshot"></img>
+                    <div class="img-overlay">
+                        <div class="round-buttons">
+                            <a href="https://cuono.dev" target="_blank" rel="noreferrer">
+                                <img src="https://cuono.dev/favicon.ico" alt="Project Icon"></img>
+                            </a>
+                            <a href="https://cuono.dev" target="_blank" rel="noreferrer">
+                                <img src="https://cuono.dev/favicon.ico" alt="Project Icon"></img>
+                            </a>
+                        </div>
+                        <div class="tags bottom">
+                            <span> AI </span>
+                            <span> NLP </span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h2> GPU-Based Real-Time Procedural Distribution of Vegetation </h2>
+                        <time dateTime="2021-09-01"> September 1, 2021 </time>
+                        <p> The AI product utilizes advanced NLP algorithms to understand and interpret human language,
+                            enabling it to accurately process and analyze text-based inputs.
+                        </p>
+                        <div class="tags">
+                            <span> AI </span>
+                            <span> NLP </span>
+                            <span> Text Analysis </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-listing" href="https://cuono.dev" target="_blank" rel="noreferrer">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137" alt="Project Screenshot"></img>
+                    <div class="img-overlay">
+                        <div class="round-buttons">
+                            <a href="https://cuono.dev" target="_blank" rel="noreferrer">
+                                <img src="https://cuono.dev/favicon.ico" alt="Project Icon"></img>
+                            </a>
+                            <a href="https://cuono.dev" target="_blank" rel="noreferrer">
+                                <img src="https://cuono.dev/favicon.ico" alt="Project Icon"></img>
+                            </a>
+                        </div>
+                        <div class="tags bottom">
+                            <span> AI </span>
+                            <span> NLP </span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h2> GPU-Based Real-Time Procedural Distribution of Vegetation </h2>
+                        <time dateTime="2021-09-01"> September 1, 2021 </time>
+                        <p> The AI product utilizes advanced NLP algorithms to understand and interpret human language,
+                            enabling it to accurately process and analyze text-based inputs.
+                        </p>
+                        <div class="tags">
+                            <span> AI </span>
+                            <span> NLP </span>
+                            <span> Text Analysis </span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
     );

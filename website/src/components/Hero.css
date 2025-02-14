@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.hero video {
+.hero video, .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -18,24 +18,6 @@
 
     mask: radial-gradient(ellipse 100% 100% at top, #ffffff, transparent 100%);
 }
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-
-    mask: radial-gradient(ellipse 100% 100% at top, #ffffff, transparent 100%);
-}
-
-/* .hero::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-} */
 
 .hero-content {
     z-index: 2;
