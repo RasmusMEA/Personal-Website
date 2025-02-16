@@ -2,14 +2,10 @@
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 0.75rem;
-    padding: 1rem;
 
     justify-content: center;
     justify-items: center;
     align-items: start;
-
-    max-width: 62rem;
-    margin: 0 auto;
 
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -19,19 +15,6 @@
     .project-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.1;
-    color: #ffffff;
-
-    width: 100%;
-    text-align: center;
-
-    text-decoration: underline;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .project-listing {
@@ -55,7 +38,7 @@ h1 {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
 }
 
-.project-listing img {
+.project-img {
     position: relative;
     object-fit: cover;
 

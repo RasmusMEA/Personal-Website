@@ -21,8 +21,8 @@
 
 .round-buttons a {
     display: inline-flex;
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
 
     transition: all 0.1s ease;
@@ -42,8 +42,8 @@
     margin: auto;
     padding: unset;
 
-    border-radius: unset;
-    box-shadow: unset;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .tags {
@@ -73,6 +73,25 @@
 .bottom {
     position: absolute;
     bottom: 0;
+}
+
+.half-width {
+    width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #ffffff;
+
+    width: 100%;
+    text-align: center;
+
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 time {
