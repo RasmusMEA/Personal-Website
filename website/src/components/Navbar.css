@@ -17,11 +17,23 @@
     align-items: center;
 
     gap: 1rem;
+    transition: all 0.1s ease;
+}
+
+#navbar .contacts li {
+    position: relative;
 }
 
 #navbar .contacts img {
     width: 1.5rem;
     height: 1.5rem;
+
+    object-fit: contain;
+    transition: all 0.2s ease;
+}
+
+#navbar .contacts img:hover {
+    transform: translateY(0.1rem);
 }
 
 #navbar #pc-menu {

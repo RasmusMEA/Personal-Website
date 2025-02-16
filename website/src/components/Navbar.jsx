@@ -5,7 +5,8 @@ import './Common.css';
 import GithubLogo from '../logos/github-mark-white.svg';
 import LinkedInLogo from '../logos/linkedin.svg';
 import MailLogo from '../logos/mail.svg';
-import ResumeLogo from '../logos/resume.svg';
+import MailOpenLogo from '../logos/mail-open-fill.svg';
+import ResumeLogo from '../logos/resume-thick.svg';
 
 function Navbar() {
     const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
@@ -53,7 +54,9 @@ function Navbar() {
                         <img src={LinkedInLogo} alt="LinkedIn" style={{ filter: "invert(1)" }} />
                     </a></li>
                     <li><a href="#">
-                        <img src={MailLogo} alt="Mail" style={{ filter: "invert(1)" }} />
+                        <img src={MailLogo} alt="Mail" style={{ filter: "invert(1)" }} 
+                        onMouseOver={ e => e.currentTarget.src = MailOpenLogo } 
+                        onMouseOut={ e => e.currentTarget.src = MailLogo } />
                     </a></li>
                     <li><a href="#">
                         <img src={ResumeLogo} alt="Resume" style={{ filter: "invert(1)" }} />
