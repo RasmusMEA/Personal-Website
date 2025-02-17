@@ -19,7 +19,7 @@
     mask: radial-gradient(ellipse 100% 100% at top, #ffffff, transparent 100%);
 }
 
-.hero-content {
+#hero #overlay {
     z-index: 2;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -32,21 +32,24 @@
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);    
 }
 
-.hero-content img {
+#hero #overlay img {
     position: relative;
     object-fit: cover;
-    width: 18rem;
-    height: 18rem;
+    
+    width: 100%;
+    aspect-ratio: 1/1;
 
     border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     mask: none;
 }
 
-.hero-content h1 {
+#hero #overlay h1 {
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 700;
 }
 
-.hero-content h3 {
-    font-size: 1.875rem;
+#hero #overlay h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
 }

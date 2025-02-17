@@ -7,32 +7,57 @@
     background-color: rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
 
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+
     transition: transform 0.3s ease-in-out;
 }
 
-#navbar .contacts {
+#navbar #logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+#navbar #navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2.75rem;
+    transition: all 0.1s ease;
+}
+
+#navbar #contacts {
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: center;
 
-    gap: 1rem;
+    gap: 1.125rem;
     transition: all 0.1s ease;
 }
 
-#navbar .contacts li {
+#navbar #contacts li {
     position: relative;
 }
 
-#navbar .contacts img {
-    width: 1.5rem;
-    height: 1.5rem;
+#navbar #contacts img {
+    width: 1.25rem;
+    height: 1.25rem;
 
     object-fit: contain;
     transition: all 0.2s ease;
 }
 
-#navbar .contacts img:hover {
+#navbar #contacts img:hover {
+    transform: translateY(0.2rem);
+}
+
+#MailLogo:hover {
     transform: translateY(0.1rem);
 }
 
@@ -40,12 +65,16 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    padding: 1rem 0;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #navbar #mobile-menu {
     display: none;
-    padding: 1rem 0;
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #navbar #divider {

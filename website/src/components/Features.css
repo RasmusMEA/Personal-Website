@@ -48,6 +48,19 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
+.project-description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 0.25rem;
+}
+
+.project-description .tags {
+    padding: unset;
+    padding-top: 0.25rem;
+}
+
 .project-listing h2 {
     font-size: 1.25rem;
     font-weight: 700;
@@ -60,18 +73,6 @@
     font-weight: 400;
     color: #424242;
     text-align: left;
-}
-
-.project-description {
-    display: flex;
-    flex-direction: column;
-    
-    gap: 0.25rem;
-}
-
-.project-description .tags {
-    padding: unset;
-    padding-top: 0.25rem;
 }
 
 .feature-grid {

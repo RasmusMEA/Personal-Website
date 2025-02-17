@@ -7,6 +7,7 @@ import LinkedInLogo from '../logos/linkedin.svg';
 import MailLogo from '../logos/mail.svg';
 import MailOpenLogo from '../logos/mail-open-fill.svg';
 import ResumeLogo from '../logos/resume-thick.svg';
+import Resume from '../media/resume.pdf';
 
 function Navbar() {
     const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
@@ -36,29 +37,27 @@ function Navbar() {
     return (
         <nav id="navbar">
             <div id="pc-menu" class="half-width">
-                <a href="#" class=""> @RasmusMEA </a>
+                <a id="logo" href="#"> @RasmusMEA </a>
 
-                {/* Navigation Links */}
-                <ul class="hidden md:flex space-x-6">
+                <ul id="navigation" class="hidden">
                     <li><a href="#"> Home </a></li>
                     <li><a href="#"> Projects </a></li>
                     <li><a href="#"> Updates </a></li>
                 </ul>
 
-                {/* Navigation Links */}
-                <ul class="contacts hidden">
-                    <li><a href="#">
+                <ul id="contacts" class="hidden">
+                    <li><a href="https://github.com/RasmusMEA" target="_blank" rel="noopener noreferrer">
                         <img src={GithubLogo} alt="Github" />
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="https://www.linkedin.com/in/rasmusmea/?locale=en_US" target="_blank" rel="noopener noreferrer">
                         <img src={LinkedInLogo} alt="LinkedIn" style={{ filter: "invert(1)" }} />
                     </a></li>
-                    <li><a href="#">
+                    <li><a id="MailLogo" href="mailto:rasan@kth.se" target="_blank" rel="noopener noreferrer">
                         <img src={MailLogo} alt="Mail" style={{ filter: "invert(1)" }} 
                         onMouseOver={ e => e.currentTarget.src = MailOpenLogo } 
                         onMouseOut={ e => e.currentTarget.src = MailLogo } />
                     </a></li>
-                    <li><a href="#">
+                    <li><a href={Resume} target="_blank" rel="noopener noreferrer">
                         <img src={ResumeLogo} alt="Resume" style={{ filter: "invert(1)" }} />
                     </a></li>
                 </ul>

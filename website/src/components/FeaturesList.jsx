@@ -7,6 +7,7 @@ function FeaturesList() {
             <h1 class="section-header"> Latest Projects </h1>
             <ul class="project-list">
                 <li><a class="project-listing" href="https://cuono.dev" target="_blank" rel="noreferrer">
+                    <div class="background" />
                     <img class="project-img" loading="lazy" src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137" alt="Project Screenshot" />
                     <div class="img-overlay">
                         <div class="round-buttons">
