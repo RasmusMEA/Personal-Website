@@ -6,7 +6,7 @@ import './index.css';
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import FeaturesList from './components/FeaturesList';
+import ProjectCards from './components/ProjectCards';
 import FeaturesGrid from './components/FeaturesGrid';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <Hero />
-    <FeaturesList />
+    <ProjectCards />
     <FeaturesGrid />
   </React.StrictMode>
 );
