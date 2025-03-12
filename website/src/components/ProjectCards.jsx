@@ -3,8 +3,8 @@ import './Common.css';
 
 // Import all project files, images and logos
 const projects = require.context('../projects', true, /\.json$/).keys().map(projectPath => require(`../projects/${projectPath.replace('./', '')}`));
-const images = require.context('../images', true, /\.(png|jpe?g|svg|webp)$/);
-const logos = require.context('../logos', true, /\.(png|jpe?g|svg|webp)$/);
+const images = require.context('../images', true, /\.(png|jpe?g|svg|webp|gif)$/);
+const logos = require.context('../logos', true, /\.(png|jpe?g|svg|webp|gif)$/);
 
 function ProjectCard(project) {
     return (
@@ -41,9 +41,13 @@ function ProjectCard(project) {
 }
 
 function ProjectCards() {
+
+    // Sort projects by date
+    projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+
     return (
         <section id="Projects" class="half-width">
-            <h1 class="section-header"> Latest Projects </h1>
+            <h1 class="section-header"> Projects </h1>
             <ul class="project-list">
                 { projects.map(project => ProjectCard(project)) }
             </ul>

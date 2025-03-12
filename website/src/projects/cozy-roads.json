@@ -1,0 +1,13 @@
+{
+    "title": "Cozy Roads",
+    "description": "Cozy Roads is an isometric puzzle game where players have to meet the demands of an ever-growing town by building roads and managing traffic. Players must plan ahead and build roads to connect houses, schools, markets, and other buildings to keep the town running smoothly. The game features a variety of buildings and challenges players to think strategically to keep the the residents happy.",
+    "img": "cozy-roads.gif",
+    "date": "2024-06-05",
+    "tags": [
+        "Game"
+    ],
+    "tools": [
+        "Unity",
+        "C#"
+    ]
+}

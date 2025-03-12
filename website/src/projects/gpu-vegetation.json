@@ -1,0 +1,14 @@
+{
+    "title": "GPU-Based Real-Time Procedural Distribution of Vegetation on Procedural Virtual Terrains",
+    "description": "This project is a Unity tool that allows for the real-time procedural distribution of vegetation on large-scale virtual terrains, with consideration of both abiotic and biotic factors from a heightmap. It does this by computing a moisture map and distributing vegetation in layers from largest to smallest plants, with the ability to adjust parameters such as moisture, temperature, and slope.",
+    "img": "gpu-vegetation-tool.gif",
+    "date": "2025-01-11",
+    "tags": [
+        "Unity Tool"
+    ],
+    "tools": [
+        "Unity",
+        "C#",
+        "HLSL"
+    ]
+}

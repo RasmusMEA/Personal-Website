@@ -103,8 +103,8 @@
 
     width: 100%;
     text-align: center;
+    padding-bottom: 1rem;
 
-    text-decoration: underline;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
