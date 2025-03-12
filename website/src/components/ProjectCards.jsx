@@ -1,23 +1,14 @@
 import './Features.css';
 import './Common.css';
 
-const projects = [
-    {
-        title: 'Project 1',
-        description: 'Project 1 Description',
-        img: 'https://images.unsplash.com/photo-1569144157591-c60f3f82f137',
-        date: '2021-09-01',
-        tags: ['AI', 'NLP', 'Text Analysis'],
-        tools: ['Python', 'TensorFlow', 'Keras'],
-        link: 'https://cuono.dev',
-    }
-];
+// Import all project files
+const projects = require.context('../projects', true, /\.json$/).keys().map(projectPath => require(`../projects/${projectPath.replace('./', '')}`));
 
 function ProjectCard(project) {
     return (
-        <li><a class="project-listing" href="https://cuono.dev" target="_blank" rel="noreferrer">
+        <li><a class="project-listing" href={ project.link } target="_blank" rel="noreferrer">
             <div class="background" />
-            <img class="project-img" loading="lazy" src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137" alt="Project Screenshot" />
+            <img class="project-img" loading="lazy" src={ project.img } alt="Project Image" />
             <div class="img-overlay">
                 <div class="round-buttons">
                     <a href="https://cuono.dev" target="_blank" rel="noreferrer">
@@ -27,21 +18,16 @@ function ProjectCard(project) {
                         <img src="https://cuono.dev/favicon.ico" alt="Project Icon" />
                     </a>
                 </div>
-                <div class="tags bottom">
-                    <span> AI </span>
-                    <span> NLP </span>
+                <div id="project-tags" class="tags bottom">
+                    { project.tags.map(tag => <span> { tag } </span>) }
                 </div>
             </div>
             <div class="project-description">
-                <h2> GPU-Based Real-Time Procedural Distribution of Vegetation </h2>
-                <time dateTime="2021-09-01"> September 1, 2021 </time>
-                <p> The AI product utilizes advanced NLP algorithms to understand and interpret human language,
-                    enabling it to accurately process and analyze text-based inputs.
-                </p>
-                <div class="tags">
-                    <span> AI </span>
-                    <span> NLP </span>
-                    <span> Text Analysis </span>
+                <h2> { project.title } </h2>
+                <time dateTime={ project.date }> { Intl.DateTimeFormat('en', { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(project.date)) } </time>
+                <p> { project.description } </p>
+                <div id="tools" class="tags">
+                    { project.tools.map(tag => <span> { tag } </span>) }
                 </div>
             </div>
         </a></li>
@@ -53,7 +39,7 @@ function ProjectCards() {
         <section id="Projects" class="half-width">
             <h1 class="section-header"> Latest Projects </h1>
             <ul class="project-list">
-                { projects.map(project => <ProjectCard project={project} />) }
+                { projects.map(project => ProjectCard(project)) }
             </ul>
         </section>
     );

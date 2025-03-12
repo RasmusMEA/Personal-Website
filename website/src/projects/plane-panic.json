@@ -1,0 +1,9 @@
+{
+    "title": "Plane Panic",
+    "description": "A game where you have to avoid the planes and collect the coins.",
+    "img": "https://images.unsplash.com/photo-1569144157591-c60f3f82f137",
+    "date": "2021-09-01",
+    "tags": ["AI", "NLP", "Text Analysis"],
+    "tools": ["Python", "TensorFlow", "Keras"],
+    "link": "https://cuono.dev"
+}
