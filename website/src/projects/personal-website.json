@@ -4,6 +4,6 @@
     "img": "https://images.unsplash.com/photo-1569144157591-c60f3f82f137",
     "date": "2025-03-12",
     "tags": ["Website"],
-    "tools": ["React", "HTML", "CSS"],
+    "tools": ["React", "HTML", "CSS", "JSON"],
     "link": "https://cuono.dev"
 }

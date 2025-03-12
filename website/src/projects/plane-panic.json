@@ -1,9 +1,19 @@
 {
     "title": "Plane Panic",
-    "description": "A game where you have to avoid the planes and collect the coins.",
-    "img": "https://images.unsplash.com/photo-1569144157591-c60f3f82f137",
-    "date": "2021-09-01",
-    "tags": ["AI", "NLP", "Text Analysis"],
-    "tools": ["Python", "TensorFlow", "Keras"],
-    "link": "https://cuono.dev"
+    "description": "Plane Panic! is a cooperative game where up to 9 players join forces to pilot a plane by moving across its wing. Players can easily connect using their mobile devices and set off to see how far they can go, working together to survive! Coordinate to guide the plane through speed rings, pull off sharp turns, and extinguish raging fires as a team. How far can you and your team of flightless birds keep the plane soaring?",
+    "img": "plane-panic-tekniska.jpg",
+    "date": "2024-09-01",
+    "tags": [
+        "Game",
+        "Local Multiplayer",
+        "Phone Controller"
+    ],
+    "tools": [
+        "Unity",
+        "C#",
+        "HLSL",
+        "Group Project"
+    ],
+    "link": "https://advancedgraphicwizards.github.io/p-plane_panic/",
+    "github": "https://github.com/AdvancedGraphicWizards/p-plane_panic"
 }
