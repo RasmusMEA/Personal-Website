@@ -1,0 +1,19 @@
+{
+    "title": "Aqua Box",
+    "description": "AquaBox is an immersive sandbox experience where players interact with 1:1 mapped physical box in VR. The box has two modes: a maze mode where players guide a particle through a maze, and a fluid simulation that can be manipulated through the box's movement.",
+    "img": "water.webp",
+    "date": "2024-12-01",
+    "tags": [
+        "Game",
+        "VR",
+        "Custom Controller"
+    ],
+    "tools": [
+        "Unity",
+        "C#",
+        "HLSL",
+        "Group Project"
+    ],
+    "link": "https://aquaboxbox.github.io/aqua-box/",
+    "github": "https://github.com/aquaboxbox/aqua-box"
+}

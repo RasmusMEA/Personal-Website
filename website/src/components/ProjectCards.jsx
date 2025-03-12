@@ -3,8 +3,8 @@ import './Common.css';
 
 // Import all project files, images and logos
 const projects = require.context('../projects', true, /\.json$/).keys().map(projectPath => require(`../projects/${projectPath.replace('./', '')}`));
-const images = require.context('../images', true, /\.(png|jpe?g|svg)$/);
-const logos = require.context('../logos', true, /\.(png|jpe?g|svg)$/);
+const images = require.context('../images', true, /\.(png|jpe?g|svg|webp)$/);
+const logos = require.context('../logos', true, /\.(png|jpe?g|svg|webp)$/);
 
 function ProjectCard(project) {
     return (

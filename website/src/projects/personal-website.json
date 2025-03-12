@@ -1,9 +1,16 @@
 {
     "title": "Personal Website",
-    "description": "Personal website showcasing my projects and blog posts.",
-    "img": "https://images.unsplash.com/photo-1569144157591-c60f3f82f137",
+    "description": "Personal website showcasing my projects and blog posts, designed to be easily expandable and customizable to display anything I desire. The website is built using React and styled with CSS, with project data stored in JSON files for easy updating.",
+    "img": "personal-website.png",
     "date": "2025-03-12",
-    "tags": ["Website"],
-    "tools": ["React", "HTML", "CSS", "JSON"],
+    "tags": [
+        "Website"
+    ],
+    "tools": [
+        "React",
+        "HTML",
+        "CSS",
+        "JSON"
+    ],
     "link": "https://cuono.dev"
 }
