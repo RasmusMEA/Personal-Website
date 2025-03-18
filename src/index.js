@@ -1,22 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import './output.css';
+import { BrowserRouter, Routes, Route } from "react-router";
+
+import './css-base.css';
 import './index.css';
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectCards from './components/ProjectCards';
-import FeaturesGrid from './components/FeaturesGrid';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Navbar />
-    <Hero />
-    <ProjectCards />
-    <FeaturesGrid />
-  </React.StrictMode>
+  <BrowserRouter>
+    <React.StrictMode>
+      <Navbar />
+      <Hero />
+      <ProjectCards />
+      <Footer />
+    </React.StrictMode>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

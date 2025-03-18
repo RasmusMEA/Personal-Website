@@ -1,5 +1,5 @@
-import './Features.css';
-import './Common.css';
+import './Projects.css';
+import '../common/Common.css';
 
 // Import all project files, images and logos
 const projects = require.context('../projects', true, /\.json$/).keys().map(projectPath => require(`../projects/${projectPath.replace('./', '')}`));
@@ -46,7 +46,7 @@ function ProjectCards() {
     projects.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     return (
-        <section id="Projects" class="half-width">
+        <section id="projects" class="half-width">
             <h1 class="section-header"> Projects </h1>
             <ul class="project-list">
                 { projects.map(project => ProjectCard(project)) }

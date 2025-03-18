@@ -31,8 +31,10 @@
     transition: all 0.1s ease;
 }
 
-#navbar #navigation a {
+#navbar #navigation li {
     position: relative;
+
+    cursor: pointer;
 
     padding-left: 1rem;
     padding-right: 1rem;
@@ -42,58 +44,12 @@
     transition: all 0.2s ease;
 }
 
-#navbar #navigation a:hover {
+#navbar #navigation li:hover {
     background-color: rgba(255, 255, 255, 0.15);
-}
-
-#navbar #contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-
-    gap: 1.125rem;
-    transition: all 0.1s ease;
-}
-
-#navbar #contacts li {
-    position: relative;
-}
-
-#navbar #contacts img {
-    width: 1.25rem;
-    height: 1.25rem;
-
-    object-fit: contain;
-    transition: all 0.2s ease;
-}
-
-#navbar #contacts img:hover {
-    transform: translateY(0.2rem);
-}
-
-#MailLogo:hover {
-    transform: translateY(0.1rem);
 }
 
 #navbar #pc-menu {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-#navbar #mobile-menu {
-    display: none;
-    
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-#navbar #divider {
-    height: 1px;
-    opacity: 0.2;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(240, 240, 240, 1), rgba(0, 0, 0, 0));
 }
