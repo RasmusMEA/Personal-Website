@@ -1,10 +1,10 @@
 import './Contacts.css';
 
-import GithubLogo from '../logos/github-mark-white.svg';
-import LinkedInLogo from '../logos/linkedin.svg';
-import MailLogo from '../logos/mail.svg';
-import MailOpenLogo from '../logos/mail-open-fill.svg';
-import ResumeLogo from '../logos/resume-thick.svg';
+import GithubLogo from '../media/logos/github-mark-white.svg';
+import LinkedInLogo from '../media/logos/linkedin.svg';
+import MailLogo from '../media/logos/mail.svg';
+import MailOpenLogo from '../media/logos/mail-open-fill.svg';
+import ResumeLogo from '../media/logos/resume-thick.svg';
 import Resume from '../media/resume.pdf';
 
 function Contacts( { DarkMode=false } ) {
