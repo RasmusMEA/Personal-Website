@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router";
@@ -11,13 +11,43 @@ import Hero from './components/Hero';
 import ProjectCards from './components/ProjectCards';
 import Footer from './components/Footer';
 
+// Create a root for the app
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Dynamically find all projects and add their routes
+const projects = require.context('./projects', true, /\.json$/).keys().map(projectPath => require(`./projects/${projectPath.replace('./', '')}`));
+
 root.render(
   <BrowserRouter>
     <React.StrictMode>
       <Navbar />
-      <Hero />
-      <ProjectCards />
+
+      {/* Routes */}
+      <Routes>
+        
+        {/* Home page */}
+        <Route path="/Personal-Website" element={
+          <>
+            <Hero />
+            <ProjectCards />
+          </>
+        } />
+        
+        {/* Project pages */}
+        { 
+          projects.map(project => ( project.slug && 
+            <Route path={`/Personal-Website/${project.slug}`} element={
+              <>
+                { 
+                  // Load Unity WebGL project and pass Unity Context
+                  React.createElement(lazy(() => import(`./projects/${project.slug}/${project.app}.jsx`)))
+                }
+              </> 
+            } /> 
+          )) 
+        }
+
+      </Routes>
       <Footer />
     </React.StrictMode>
   </BrowserRouter>

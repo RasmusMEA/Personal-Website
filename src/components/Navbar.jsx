@@ -24,18 +24,23 @@ function Navbar() {
     }
 
     return (
-        <nav id="navbar">
-            <div id="pc-menu" class="half-width">
-                <a id="logo" href="#"> @RasmusMEA </a>
-                <ul id="navigation">
-                    <li><NavHashLink smooth to="/#hero"> Home </NavHashLink></li>
-                    <li><NavHashLink smooth to="/#projects"> Projects </NavHashLink></li>
-                    <li><NavHashLink smooth to="/#updates"> Updates </NavHashLink></li>
-                </ul>
-                <Contacts DarkMode />
-            </div>
-            <div id="divider" />
-        </nav>
+        <>
+            <nav id="navbar">
+                <div id="pc-menu" class="half-width">
+                    <NavHashLink id="logo" to="/Personal-Website"> @RasmusMEA </NavHashLink>
+                    <ul id="navigation">
+                        <li><NavHashLink smooth to="/Personal-Website#hero"> Home </NavHashLink></li>
+                        <li><NavHashLink smooth to="/Personal-Website#projects"> Projects </NavHashLink></li>
+                        <li><NavHashLink smooth to="/Personal-Website#updates"> Updates </NavHashLink></li>
+                    </ul>
+                    <Contacts DarkMode />
+                </div>
+                <div id="divider" />
+            </nav>
+
+            {/* Filer div to prevent content from being hidden behind the navbar */}
+            <div id="navbar-filler" />
+        </>
     );
 }
 

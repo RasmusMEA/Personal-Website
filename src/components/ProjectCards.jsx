@@ -7,7 +7,7 @@ const media = require.context('../media', true, /\.(png|jpe?g|svg|webp|gif)$/);
 
 function ProjectCard(project) {
     return (
-        <li><a class="project-listing" href={ "" }>
+        <li><a class="project-listing" href={ project.slug ? `/Personal-Website/${project.slug}` : project.external }>
             <div class="background" />
             <img class="project-img" loading="lazy" src={ project.img.includes('http') ? project.img : media(`./${project.img}`) } alt={ project.title } />
             <div class="img-overlay">
@@ -17,8 +17,8 @@ function ProjectCard(project) {
                             <img src={ media(`./logos/github-mark-white.svg`) } alt="GitHub Icon" />
                         </a>
                     }
-                    { project.link &&
-                        <a href={ project.link } target="_blank" rel="noreferrer">
+                    { project.external &&
+                        <a href={ project.external } target="_blank" rel="noreferrer">
                             <img src={ media(`./logos/external-link-white.svg`) } alt="External Link Icon" />
                         </a>
                     }

@@ -14,6 +14,6 @@
         "HLSL",
         "Group Project"
     ],
-    "link": "https://advancedgraphicwizards.github.io/p-plane_panic/",
+    "external": "https://advancedgraphicwizards.github.io/p-plane_panic/",
     "github": "https://github.com/AdvancedGraphicWizards/p-plane_panic"
 }
