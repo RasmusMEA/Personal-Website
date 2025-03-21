@@ -27,7 +27,7 @@ function Navbar() {
         <>
             <nav id="navbar">
                 <div id="pc-menu" class="half-width">
-                    <NavHashLink id="logo" to="/Personal-Website"> @RasmusMEA </NavHashLink>
+                    <NavHashLink id="logo" smooth to="/Personal-Website"> @RasmusMEA </NavHashLink>
                     <ul id="navigation">
                         <li><NavHashLink smooth to="/Personal-Website#hero"> Home </NavHashLink></li>
                         <li><NavHashLink smooth to="/Personal-Website#projects"> Projects </NavHashLink></li>
