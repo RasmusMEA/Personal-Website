@@ -9,6 +9,8 @@ body {
 	background: linear-gradient(180deg, transparent, #ffffff 1440px),
 				radial-gradient(ellipse 2400px 1600px at top, transparent 1600px, #ffffff),
 				linear-gradient(270deg, #833ab4 calc(max(200px, 50%) - 50%), #fd1d1d 50%, #fcb045 calc(max(200px, 50%) + 50%));
+
+	min-height: 100vh;
 }
 
 code {

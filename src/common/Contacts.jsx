@@ -9,7 +9,7 @@ import Resume from '../media/resume.pdf';
 
 function Contacts( { DarkMode=false } ) {
     return (
-        <ul id="contacts" class="hidden">
+        <ul id="contacts">
             <li><a href="https://github.com/RasmusMEA" target="_blank" rel="noopener noreferrer">
                 <img src={GithubLogo} alt="Github" {...!DarkMode && {style: {filter: "invert(1)"}}} />
             </a></li>

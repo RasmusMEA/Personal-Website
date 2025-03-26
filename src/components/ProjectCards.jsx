@@ -8,9 +8,9 @@ const media = require.context('../media', true, /\.(png|jpe?g|svg|webp|gif)$/);
 function ProjectCard(project) {
     return (
         <li><a class="project-listing" href={ project.slug ? `/Personal-Website/${project.slug}` : project.external }>
-            <div class="background" />
+            <div class="blurred-background" />
             <img class="project-img" loading="lazy" src={ project.img.includes('http') ? project.img : media(`./${project.img}`) } alt={ project.title } />
-            <div class="img-overlay">
+            <div class="img-overlay" style={{ aspectRatio: "16/9" }}>
                 <div class="round-buttons">
                     { project.github &&
                         <a href={ project.github } target="_blank" rel="noreferrer">
@@ -29,7 +29,7 @@ function ProjectCard(project) {
             </div>
             <div class="project-description">
                 <h2> { project.title } </h2>
-                <time dateTime={ project.date }> { Intl.DateTimeFormat('en', { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(project.date)) } </time>
+                <time dateTime={ project.date } style={{ fontSize: "0.875rem" }}> { Intl.DateTimeFormat('en', { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(project.date)) } </time>
                 <p> { project.description } </p>
                 <div id="tools" class="tags">
                     { project.tools.map(tag => <span> { tag } </span>) }
