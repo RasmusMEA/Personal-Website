@@ -58,15 +58,14 @@
     line-height: 1rem;
     font-weight: 500;
     color: #ffffff;
-    background-color: #757575;
+    background-color: #5a5a5a;
     padding: 0.25rem 0.5rem;
     border-radius: 100px;
-
     transition: all 0.1s ease;
 }
 
 .tags span:hover {
-    background-color: #858585;
+    background-color: #727272;
 }
 
 .bottom {
@@ -114,7 +113,7 @@
 }
 
 .section-header {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.1;
     color: #ffffff;

@@ -1,4 +1,4 @@
-import './Contacts.css';
+import 'css/Contacts.css';
 
 import GithubLogo from '../media/logos/github-mark-white.svg';
 import LinkedInLogo from '../media/logos/linkedin.svg';

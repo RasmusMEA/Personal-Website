@@ -2,13 +2,12 @@ import { use, useEffect, useState } from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 import { useLocation, useNavigate  } from 'react-router-dom';
 
-import './Navbar.css';
-import '../common/Common.css';
-import '../common/Contacts.css';
+import 'css/Navbar.css';
+import 'css/Common.css';
+import 'css/Contacts.css';
 
-import Contacts from '../common/Contacts';
+import Contacts from './Contacts';
 import Backbutton from '../media/logos/back-arrow.svg';
-import TestImage from '../media/cozy-roads.gif';
 
 function Navbar() {
     const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
@@ -41,9 +40,9 @@ function Navbar() {
                 }
                 
                 <ul id="navigation">
-                    <li><NavHashLink smooth to="/Personal-Website#hero"> Home </NavHashLink></li>
-                    <li><NavHashLink smooth to="/Personal-Website#projects"> Projects </NavHashLink></li>
-                    <li><NavHashLink smooth to="/Personal-Website#updates"> Updates </NavHashLink></li>
+                    <li><NavHashLink smooth to="#hero"> Home </NavHashLink></li>
+                    <li><NavHashLink smooth to="#projects"> Projects </NavHashLink></li>
+                    <li><NavHashLink smooth to="#updates"> Updates </NavHashLink></li>
                 </ul>
                 <Contacts DarkMode />
             </div>

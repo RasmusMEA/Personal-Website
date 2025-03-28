@@ -11,5 +11,13 @@
         "C#"
     ],
     "slug": "cozy-roads",
-    "app": "CozyRoads"
+    "app": "CozyRoads",
+    "updates": [
+        {
+            "title": "Cozy Roads - Project Page creation",
+            "img": "cozy-roads.gif",
+            "date": "2025-03-28",
+            "description": "Initial creation of Cozy Roads project page, including the game description, images, basic information and playable demo."
+        }
+    ]
 }

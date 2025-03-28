@@ -10,5 +10,7 @@
         "Unity",
         "C#",
         "HLSL"
-    ]
+    ],
+    "slug": "gpu-vegetation",
+    "app": "GpuVegetation"
 }

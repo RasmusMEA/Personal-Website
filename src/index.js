@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectCards from './components/ProjectCards';
 import Footer from './components/Footer';
+import UpdateFeed from './components/UpdateFeed';
 
 // Create a root for the app
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,10 +28,11 @@ root.render(
         
         {/* Home page */}
         <Route path="/Personal-Website" element={
-          <>
+          <div class="half-width">
             <Hero />
             <ProjectCards />
-          </>
+            <UpdateFeed filter="all" />
+          </div>
         } />
         
         {/* Project pages */}

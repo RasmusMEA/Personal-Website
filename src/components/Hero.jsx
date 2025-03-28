@@ -1,15 +1,15 @@
-import './Hero.css';
-import '../common/Common.css';
+import 'css/Hero.css';
+import 'css/Common.css';
 
 import ProfileIMG from '../media/profile.jpg';
 
 function Hero() {
     return (
         <section id="hero">
-            <div id="overlay" class="half-width">
+            <div id="overlay">
                 <div>
                     <h1>Rasmus Andersson</h1>
-                    <h2>M.Sc. Student in Computer Science @ KTH, Royal Institute of Technology, Sweden</h2>
+                    <h2>M.Sc. Computer Science Student @ KTH, Royal Institute of Technology, Sweden</h2>
                     <p>
                         I focus mainly on computer graphics, but regardless of what I try my hands on
                         I always enjoy giving it my best. I am a team player and a quick learner who 
@@ -17,7 +17,7 @@ function Hero() {
                         others and improving on knowledge every day.
                     </p>
                 </div>
-                <img src={ProfileIMG} alt="Profile" />
+                <img src={ProfileIMG} alt="Profile" style={{ aspectRatio: "1/1" }}/>
             </div>
         </section>
     );
