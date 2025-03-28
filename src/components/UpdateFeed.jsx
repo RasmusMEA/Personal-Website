@@ -1,8 +1,9 @@
 import 'css/Common.css';
 import styles from 'css/Update.module.css';
 
-// Import all media files
-const media = require.context('../media', true, /\.(png|jpe?g|svg|webp|gif)$/);
+// Import all projects and media files
+const projects = require.context('projects', true, /\.json$/).keys().map(projectPath => require(`projects/${projectPath.replace('./', '')}`));
+const media = require.context('media', true, /\.(png|jpe?g|svg|webp|gif)$/);
 
 function truncateText(text, maxLength) {
     if (text.length > maxLength) {
@@ -28,11 +29,8 @@ function UpdatePost(post) {
 
 function UpdateFeed(filter) {
 
-    // Import all user posts
-    var posts = require.context('../projects', true, /\.json$/).keys().map(projectPath => require(`../projects/${projectPath.replace('./', '')}`));
-
-    // Filter posts that have updates
-    posts = posts.filter(post => post.updates);
+    // Filter projects that have updates
+    var posts = projects.filter(post => post.updates);
 
     // Filter posts by tag
     if (filter.filter !== "all") {
