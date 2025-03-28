@@ -2,9 +2,9 @@ import { use, useEffect, useState } from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 import { useLocation, useNavigate  } from 'react-router-dom';
 
-import 'css/Navbar.css';
-import 'css/Common.css';
-import 'css/Contacts.css';
+import '../css/Navbar.css';
+import '../css/Common.css';
+import '../css/Contacts.css';
 
 import Contacts from './Contacts';
 import Backbutton from '../media/logos/back-arrow.svg';

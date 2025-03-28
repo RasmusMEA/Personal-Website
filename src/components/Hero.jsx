@@ -1,5 +1,5 @@
-import 'css/Hero.css';
-import 'css/Common.css';
+import '../css/Hero.css';
+import '../css/Common.css';
 
 import ProfileIMG from '../media/profile.jpg';
 

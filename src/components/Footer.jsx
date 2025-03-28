@@ -1,6 +1,6 @@
-import 'css/Footer.css';
-import 'css/Common.css';
-import 'css/Contacts.css';
+import '../css/Footer.css';
+import '../css/Common.css';
+import '../css/Contacts.css';
 
 import Contacts from './Contacts';
 

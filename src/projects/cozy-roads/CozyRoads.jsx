@@ -1,5 +1,5 @@
-import 'css/Hero.css';
-import 'css/Common.css';
+import '../../css/Hero.css';
+import '../../css/Common.css';
 import styles from './cozy-roads.module.css';
 
 import UpdateFeed from '../../components/UpdateFeed';

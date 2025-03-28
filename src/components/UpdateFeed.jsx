@@ -1,9 +1,9 @@
-import 'css/Common.css';
-import styles from 'css/Update.module.css';
+import '../css/Common.css';
+import styles from '../css/Update.module.css';
 
 // Import all projects and media files
-const projects = require.context('projects', true, /\.json$/).keys().map(projectPath => require(`projects/${projectPath.replace('./', '')}`));
-const media = require.context('media', true, /\.(png|jpe?g|svg|webp|gif)$/);
+const projects = require.context('../projects', true, /\.json$/).keys().map(projectPath => require(`../projects/${projectPath.replace('./', '')}`));
+const media = require.context('../media', true, /\.(png|jpe?g|svg|webp|gif)$/);
 
 function truncateText(text, maxLength) {
     if (text.length > maxLength) {

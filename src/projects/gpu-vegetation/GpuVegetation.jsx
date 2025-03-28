@@ -1,5 +1,5 @@
-import 'css/Hero.css';
-import 'css/Common.css';
+import '../../css/Hero.css';
+import '../../css/Common.css';
 import styles from './gpu-vegetation.module.css';
 
 import Background from '../../media/gpu-vegetation.gif'

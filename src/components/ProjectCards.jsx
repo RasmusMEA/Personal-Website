@@ -1,10 +1,10 @@
-import 'css/Projects.css';
-import 'css/Common.css';
+import '../css/Projects.css';
+import '../css/Common.css';
 import { Link } from 'react-router-dom';
 
 // Import all project files and media files
-const projects = require.context('projects', true, /\.json$/).keys().map(projectPath => require(`projects/${projectPath.replace('./', '')}`));
-const media = require.context('media', true, /\.(png|jpe?g|svg|webp|gif)$/);
+const projects = require.context('../projects', true, /\.json$/).keys().map(projectPath => require(`../projects/${projectPath.replace('./', '')}`));
+const media = require.context('../media', true, /\.(png|jpe?g|svg|webp|gif)$/);
 
 function truncateText(text, maxLength) {
     if (text.length > maxLength) {
