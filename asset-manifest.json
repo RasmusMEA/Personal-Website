@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.0aecee43.css",
-    "main.js": "/Personal-Website/static/js/main.0e2f33cb.js",
-    "static/js/453.45297a17.chunk.js": "/Personal-Website/static/js/453.45297a17.chunk.js",
+    "main.css": "/Personal-Website/static/css/main.f16e5d5a.css",
+    "main.js": "/Personal-Website/static/js/main.e7ca29c5.js",
+    "static/js/453.bb828c5d.chunk.js": "/Personal-Website/static/js/453.bb828c5d.chunk.js",
     "static/media/gpu-vegetation.gif": "/Personal-Website/static/media/gpu-vegetation.0a57c3c448d295b7ed42.gif",
     "static/media/gpu-vegetation-tool.gif": "/Personal-Website/static/media/gpu-vegetation-tool.ff4b89d45889cc1c944e.gif",
     "static/media/cozy-roads.gif": "/Personal-Website/static/media/cozy-roads.629de68d2e59937b975f.gif",
@@ -23,12 +23,12 @@
     "index.html": "/Personal-Website/index.html",
     "static/media/linkedin.svg": "/Personal-Website/static/media/linkedin.a88e8523d338423488e33739210f77b8.svg",
     "static/media/mail.svg": "/Personal-Website/static/media/mail.284398557b455636a0beb6206c94de01.svg",
-    "main.0aecee43.css.map": "/Personal-Website/static/css/main.0aecee43.css.map",
-    "main.0e2f33cb.js.map": "/Personal-Website/static/js/main.0e2f33cb.js.map",
-    "453.45297a17.chunk.js.map": "/Personal-Website/static/js/453.45297a17.chunk.js.map"
+    "main.f16e5d5a.css.map": "/Personal-Website/static/css/main.f16e5d5a.css.map",
+    "main.e7ca29c5.js.map": "/Personal-Website/static/js/main.e7ca29c5.js.map",
+    "453.bb828c5d.chunk.js.map": "/Personal-Website/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0aecee43.css",
-    "static/js/main.0e2f33cb.js"
+    "static/css/main.f16e5d5a.css",
+    "static/js/main.e7ca29c5.js"
   ]
 }
