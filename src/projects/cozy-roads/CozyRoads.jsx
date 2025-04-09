@@ -10,8 +10,8 @@ import PlayArrow from './play-arrow.png';
 function CozyRoads() {
     return (
         <div className={styles.cozyRoads}>
-            <img class="background fade-bottom" src={Background} alt="Background" style={{ height: "70vh" }} />
-            <div class="half-width">
+            <img className="background fade-bottom" src={Background} alt="Background" style={{ height: "70vh" }} />
+            <div className="half-width">
                 <div className={styles.logoContainer}  style={{ paddingTop: "20vh" }}>
                     <h1>Cozy Roads</h1>
                     <h3 style={{ paddingBottom: "5vh", width: "80%", margin: "auto" }}>
@@ -55,7 +55,7 @@ function CozyRoads() {
                     </a>
                 </div>
                 
-                <h1 class="section-header" style={{ marginTop: "10vh" }}>How To Play</h1>
+                <h1 className="section-header" style={{ marginTop: "10vh" }}>How To Play</h1>
                 <div className={styles.descriptionGrid} style={{ marginBottom: "4vh" }}>
                     <div>
                         <h2>Controls</h2>
@@ -82,7 +82,7 @@ function CozyRoads() {
                 <div className={styles.splitCard} style={{ display: "flex", justifyContent: "space-between" }}>
                     <div className={styles.card}>
                         <img src={Background} alt="Background" />
-                        <div class="img-overlay">
+                        <div className="img-overlay">
                             <h2>RUSH HOUR MODE</h2>
                             <p>
                                 Connecting buildings on a grid map to facilitate car movements 
@@ -95,7 +95,7 @@ function CozyRoads() {
                     <div style={{ width: "1px", backgroundColor: "white" }} />
                     <div className={styles.card}>
                         <img src={Background} alt="Background" />
-                        <div class="img-overlay">
+                        <div className="img-overlay">
                             <h2>ENDLESS URBAN MODE</h2>
                             <p>
                                 Enjoy the freedom to build the city without time constraint 
@@ -110,7 +110,7 @@ function CozyRoads() {
                 <UpdateFeed filter="cozy-roads" />
             
                 <div style={{ paddingBottom: "5vh" }}>
-                    <h1 class="section-header">Motivation Behind Project</h1>
+                    <h1 className="section-header">Motivation Behind Project</h1>
                     <p className={styles.description}>
                         Cozy Roads started from a game design course, where groups of students
                         are tasked to develop a game prototype with motivated choices of game mechanics and

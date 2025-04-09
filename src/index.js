@@ -1,7 +1,7 @@
-import React, { lazy, useEffect } from 'react';
+import React, { lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from "react-router";
+import { Routes, Route, HashRouter } from "react-router";
 
 import './css-base.css';
 import './index.css';
@@ -19,7 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const projects = require.context('./projects', true, /\.json$/).keys().map(projectPath => require(`./projects/${projectPath.replace('./', '')}`));
 
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <React.StrictMode>
       <Navbar />
 
@@ -27,8 +27,8 @@ root.render(
       <Routes>
         
         {/* Home page */}
-        <Route path="/Personal-Website" element={
-          <div class="half-width">
+        <Route path="/" element={
+          <div className="half-width">
             <Hero />
             <ProjectCards />
             <UpdateFeed filter="all" />
@@ -38,7 +38,7 @@ root.render(
         {/* Project pages */}
         { 
           projects.map(project => ( project.slug && 
-            <Route path={`/Personal-Website/${project.slug}`} element={
+            <Route path={`/${project.slug}`} key={project.slug} element={
               <>
                 { 
                   // Load Unity WebGL project and pass Unity Context
@@ -52,7 +52,7 @@ root.render(
       </Routes>
       <Footer />
     </React.StrictMode>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

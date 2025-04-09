@@ -15,11 +15,11 @@ function truncateText(text, maxLength) {
 
 function ProjectCard(project) {
     return (
-        <li><Link class="project-listing" to={ project.slug ? `/Personal-Website/${project.slug}` : project.external }>
-            <div class="blurred-background" />
-            <img class="project-img" loading="lazy" src={ project.img.includes('http') ? project.img : media(`./${project.img}`) } alt={ project.title } />
-            <div class="img-overlay" style={{ aspectRatio: "16/9" }}>
-                <div class="round-buttons">
+        <li><Link className="project-listing" to={ project.slug ? `/${project.slug}` : project.external }>
+            <div className="blurred-background" />
+            <img className="project-img" loading="lazy" src={ project.img.includes('http') ? project.img : media(`./${project.img}`) } alt={ project.title } />
+            <div className="img-overlay" style={{ aspectRatio: "16/9" }}>
+                <div className="round-buttons">
                     { project.github &&
                         <a href={ project.github } target="_blank" rel="noreferrer">
                             <img src={ media(`./logos/github-mark-white.svg`) } alt="GitHub Icon" />
@@ -31,15 +31,15 @@ function ProjectCard(project) {
                         </a>
                     }
                 </div>
-                <div id="project-tags" class="tags bottom">
+                <div id="project-tags" className="tags bottom">
                     { project.tags.map(tag => <span> { tag } </span>) }
                 </div>
             </div>
-            <div class="project-description">
+            <div className="project-description">
                 <h2> { project.title } </h2>
                 <time dateTime={ project.date } style={{ fontSize: "0.875rem" }}> { Intl.DateTimeFormat('en', { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(project.date)) } </time>
                 <p> { truncateText(project.description, 260) } </p>
-                <div id="tools" class="tags">
+                <div id="tools" className="tags">
                     { project.tools.map(tag => <span> { tag } </span>) }
                 </div>
             </div>
@@ -54,9 +54,9 @@ function ProjectCards() {
 
     return (
         <section id="projects">
-            <h1 class="section-header"> Projects </h1>
-            <ul class="project-list">
-                { projects.map(project => <ProjectCard {...project} />) }
+            <h1 className="section-header"> Projects </h1>
+            <ul className="project-list">
+                { projects.map(project => <ProjectCard key={ project.slug ? project.slug : project.external } { ...project } />) }
             </ul>
         </section>
     );

@@ -7,10 +7,10 @@ import Background from '../../media/gpu-vegetation.gif'
 function GpuVegetation() {
     return (
         <div className={styles.gpuVegetation}>
-            <img class="background fade-bottom" src={Background} alt="Background" style={{ height: "70vh" }} />
-            <div class="half-width">
+            <img className="background fade-bottom" src={Background} alt="Background" style={{ height: "70vh" }} />
+            <div className="half-width">
                 <div style={{ paddingTop: "20vh" }}>
-                    <h1 class="title">GPU-Based Real-Time Procedural Distribution of Vegetation on Procedural Virtual Terrains</h1>
+                    <h1 className="title">GPU-Based Real-Time Procedural Distribution of Vegetation on Procedural Virtual Terrains</h1>
                     <h3 style={{ paddingBottom: "5vh", width: "80%", margin: "auto" }}>
                         This project is a Unity tool that allows for the real-time procedural distribution 
                         of vegetation on large-scale virtual terrains, with consideration of both abiotic 
@@ -21,11 +21,11 @@ function GpuVegetation() {
                 </div>
 
                 <div style={{ marginTop: "5vh", marginBottom: "2vh" }}>
-                    <h1 class="title" style={{ fontSize: "4rem" }}>Updates</h1>
+                    <h1 className="title" style={{ fontSize: "4rem" }}>Updates</h1>
                 </div>
                 
                 <div style={{ marginTop: "5vh", marginBottom: "5vh" }}>
-                    <h1 class="title" style={{ fontSize: "4rem" }}>Motivation Behind Project</h1>
+                    <h1 className="title" style={{ fontSize: "4rem" }}>Motivation Behind Project</h1>
                     <p>
                         
                     </p>

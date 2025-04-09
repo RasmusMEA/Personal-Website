@@ -32,10 +32,15 @@
     transition: all 0.1s ease;
 }
 
-#navbar #navigation li {
-    position: relative;
+#navbar #pc-menu {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 52px;
+    align-items: center;
+}
 
-    cursor: pointer;
+#navbar #navigation button, #navbar #pc-menu #back-btn {
+    position: relative;
 
     padding-left: 1rem;
     padding-right: 1rem;
@@ -45,28 +50,13 @@
     transition: all 0.2s ease;
 }
 
-#navbar #navigation li:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
-#navbar #pc-menu {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 52px;
-    align-items: center;
-}
-
-#navbar #pc-menu button {
+#navbar #pc-menu #back-btn {
     height: 40px;
     aspect-ratio: 1/1;
-
     padding: 0.1rem;
-
-    border-radius: 100px;
-    transition: all 0.1s ease;
 }
 
-#navbar #pc-menu button:hover {
+#navbar #navigation button:hover, #navbar #pc-menu #back-btn:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.15);
 }

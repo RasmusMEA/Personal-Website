@@ -7,12 +7,12 @@ import Contacts from './Contacts';
 function Footer() {
     return (
         <footer id="footer">
-            <div class="divider" />
-            <div id="content" class="half-width">
+            <div className="divider" />
+            <div id="content" className="half-width">
                 <h4> @RasmusMEA </h4>
                 <h4> 
-                    Latest Updated: <time dateTime={ "2025-03-28" }> 
-                        { Intl.DateTimeFormat('en', { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date("2025-03-28")) } 
+                    Latest Updated: <time dateTime={ "2025-04-09" }> 
+                        { Intl.DateTimeFormat('en', { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date("2025-04-09")) } 
                     </time> 
                 </h4> 
                 <Contacts />

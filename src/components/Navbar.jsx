@@ -1,5 +1,4 @@
-import { use, useEffect, useState } from 'react';
-import { NavHashLink } from 'react-router-hash-link';
+import { useEffect, useState } from 'react';
 import { useLocation, useNavigate  } from 'react-router-dom';
 
 import '../css/Navbar.css';
@@ -30,9 +29,9 @@ function Navbar() {
 
     return(
         <nav id="navbar">
-            <div id="pc-menu" class="half-width">
-                { useLocation().pathname !== "/Personal-Website" ?
-                    <button onClick={() => navigate(-1)}>
+            <div id="pc-menu" className="half-width">
+                { useLocation().pathname !== "/" ?
+                    <button id="back-btn" onClick={() => navigate(-1)}>
                         <img src={ Backbutton } alt="Back Arrow" style={{ filter: "invert(1)" }} />
                     </button> 
                     :
@@ -40,9 +39,13 @@ function Navbar() {
                 }
                 
                 <ul id="navigation">
-                    <li><NavHashLink smooth to="#hero"> Home </NavHashLink></li>
-                    <li><NavHashLink smooth to="#projects"> Projects </NavHashLink></li>
-                    <li><NavHashLink smooth to="#updates"> Updates </NavHashLink></li>
+                    <li><button id="home-btn" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}> Home </button></li>
+                    { document.getElementById("projects") &&
+                        <li><button id="projects-btn" onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}> Projects </button></li>
+                    }
+                    { document.getElementById("updates") &&
+                        <li><button id="updates-btn" onClick={() => document.getElementById("updates").scrollIntoView({ behavior: "smooth" })}> Updates </button></li>
+                    }
                 </ul>
                 <Contacts DarkMode />
             </div>

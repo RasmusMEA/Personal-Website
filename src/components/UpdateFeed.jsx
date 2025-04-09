@@ -14,7 +14,7 @@ function truncateText(text, maxLength) {
 
 function UpdatePost(post) {
     return (
-        <li className={ styles.updatePost } key={ post.slug }>
+        <li className={ styles.updatePost }>
             <img loading="lazy" alt={ post.title } src={ post.img.includes('http') ? post.img : media(`./${post.img}`) } />
             <div style={{ display: "flex", flexDirection: "column" }}>
                 <h2>{ truncateText(post.title, 70) }</h2>
@@ -43,9 +43,9 @@ function UpdateFeed(filter) {
 
     return (
         <section id="updates" style={{ marginTop: "5vh", marginBottom: "5vh" }}>
-            <h1 class="section-header">Updates</h1>
+            <h1 className="section-header">Updates</h1>
             <ul>
-                { posts.map(post => <UpdatePost { ...post } />) }
+                { posts.map(post => <UpdatePost key={ post.slug } { ...post } />) }
             </ul>
         </section>
     );
