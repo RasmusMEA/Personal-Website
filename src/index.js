@@ -1,7 +1,7 @@
 import React, { lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { Routes, Route, HashRouter } from "react-router";
+import { ScrollRestoration, createHashRouter, createRoutesFromElements, RouterProvider, Route, Outlet } from "react-router-dom";
 
 import './css-base.css';
 import './index.css';
@@ -12,47 +12,57 @@ import ProjectCards from './components/ProjectCards';
 import Footer from './components/Footer';
 import UpdateFeed from './components/UpdateFeed';
 
-// Create a root for the app
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
 // Dynamically find all projects and add their routes
 const projects = require.context('./projects', true, /\.json$/).keys().map(projectPath => require(`./projects/${projectPath.replace('./', '')}`));
 
-root.render(
-  <HashRouter>
-    <React.StrictMode>
-      <Navbar />
+const router = createHashRouter(
+  createRoutesFromElements(
+    <Route path="/" element={
+			<>
+				{/* Invisible components */}
+				<ScrollRestoration />
+				
+				{/* Website */}
+				<Navbar />
 
-      {/* Routes */}
-      <Routes>
-        
-        {/* Home page */}
-        <Route path="/" element={
-          <div className="half-width">
-            <Hero />
-            <ProjectCards />
-            <UpdateFeed filter="all" />
-          </div>
-        } />
-        
-        {/* Project pages */}
-        { 
-          projects.map(project => ( project.slug && 
-            <Route path={`/${project.slug}`} key={project.slug} element={
+				{/* Main content */}
+				<Outlet />
+
+				<Footer />
+			</>
+		}>
+
+			{/* Homepage */}
+			<Route index element={
+				<div className="half-width">
+					<Hero />
+					<ProjectCards />
+					<UpdateFeed filter="all" />
+				</div>
+			} />
+
+			{/* Projects */}
+      {
+        projects.map(project => (
+					console.log(`/${project.slug}`), // Debugging line to check the project object
+          project.slug && (
+            <Route path={`${project.slug}`} key={project.slug} element={
               <>
-                { 
-                  // Load Unity WebGL project and pass Unity Context
-                  React.createElement(lazy(() => import(`./projects/${project.slug}/${project.app}.jsx`)))
-                }
-              </> 
-            } /> 
-          )) 
-        }
+                {React.createElement(lazy(() => import(`./projects/${project.slug}/${project.app}.jsx`)))}
+								<Outlet />
+              </>
+            } />
+          )
+        ))
+      }
+    </Route>
+  )
+);
 
-      </Routes>
-      <Footer />
-    </React.StrictMode>
-  </HashRouter>
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
+		<RouterProvider router={router} />
+	</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
