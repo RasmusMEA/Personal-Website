@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.22063dfe.css",
-    "main.js": "/Personal-Website/static/js/main.1677f9b9.js",
-    "static/js/453.bb828c5d.chunk.js": "/Personal-Website/static/js/453.bb828c5d.chunk.js",
+    "main.css": "/Personal-Website/static/css/main.4385d4e4.css",
+    "main.js": "/Personal-Website/static/js/main.83d5ada8.js",
+    "static/js/453.b03e3c98.chunk.js": "/Personal-Website/static/js/453.b03e3c98.chunk.js",
     "static/media/gpu-vegetation.gif": "/Personal-Website/static/media/gpu-vegetation.0a57c3c448d295b7ed42.gif",
     "static/media/gpu-vegetation-tool.gif": "/Personal-Website/static/media/gpu-vegetation-tool.ff4b89d45889cc1c944e.gif",
     "static/media/cozy-roads.gif": "/Personal-Website/static/media/cozy-roads.629de68d2e59937b975f.gif",
@@ -11,6 +11,14 @@
     "static/media/personal-website.png": "/Personal-Website/static/media/personal-website.8d248bf762fd6562918c.png",
     "static/media/profile.jpg": "/Personal-Website/static/media/profile.52670fde1831ee30a0dc.jpg",
     "static/media/plane-panic-tekniska.jpg": "/Personal-Website/static/media/plane-panic-tekniska.d4d544c650ccf75faf43.jpg",
+    "static/media/normal.png": "/Personal-Website/static/media/normal.18f466c8a7e3bcefe2b6.png",
+    "static/media/slope.png": "/Personal-Website/static/media/slope.80f8899dcaff2ca1de03.png",
+    "static/media/r-moisture.png": "/Personal-Website/static/media/r-moisture.3af3351cc123b2f1fe3f.png",
+    "static/media/moisture.png": "/Personal-Website/static/media/moisture.b5563ef2af8e46b260af.png",
+    "static/media/height.png": "/Personal-Website/static/media/height.79b616d1029a67fc8e5e.png",
+    "static/media/water.png": "/Personal-Website/static/media/water.aa23f11ffbe78d639a51.png",
+    "static/media/relative.png": "/Personal-Website/static/media/relative.7b9b7e1acd61f8de2c71.png",
+    "static/media/spread.png": "/Personal-Website/static/media/spread.4ae2a417f31d3fbf6aa8.png",
     "static/media/resume-thick-thick.svg": "/Personal-Website/static/media/resume-thick-thick.84793468d6caa213c97c.svg",
     "static/media/resume-thick.svg": "/Personal-Website/static/media/resume-thick.653cfa1578ee328f6f2ca9c3eb4583cf.svg",
     "static/media/resume-slim.svg": "/Personal-Website/static/media/resume-slim.3f942d4907beb03e4d55.svg",
@@ -23,12 +31,12 @@
     "index.html": "/Personal-Website/index.html",
     "static/media/linkedin.svg": "/Personal-Website/static/media/linkedin.a88e8523d338423488e33739210f77b8.svg",
     "static/media/mail.svg": "/Personal-Website/static/media/mail.284398557b455636a0beb6206c94de01.svg",
-    "main.22063dfe.css.map": "/Personal-Website/static/css/main.22063dfe.css.map",
-    "main.1677f9b9.js.map": "/Personal-Website/static/js/main.1677f9b9.js.map",
-    "453.bb828c5d.chunk.js.map": "/Personal-Website/static/js/453.bb828c5d.chunk.js.map"
+    "main.4385d4e4.css.map": "/Personal-Website/static/css/main.4385d4e4.css.map",
+    "main.83d5ada8.js.map": "/Personal-Website/static/js/main.83d5ada8.js.map",
+    "453.b03e3c98.chunk.js.map": "/Personal-Website/static/js/453.b03e3c98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22063dfe.css",
-    "static/js/main.1677f9b9.js"
+    "static/css/main.4385d4e4.css",
+    "static/js/main.83d5ada8.js"
   ]
 }
