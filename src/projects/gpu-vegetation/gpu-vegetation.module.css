@@ -12,31 +12,60 @@
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.gpuVegetation h1 {
+.logoContainer h1 {
     padding-bottom: 1rem;
     text-align: center;
 
-    font-size: 2.5rem;
+    font-size: 3rem;
+    line-height: 1.1;
     font-weight: 700;
 }
 
-.gpuVegetation h2 {
-    font-size: 2rem;
-    font-weight: 600;
-
-    text-align: center;
-}
-
-.gpuVegetation h3 {
+.logoContainer h3 {
     font-size: 1.25rem;
     font-weight: 400;
 
     text-align: center;
 }
 
-.gpuVegetation p {
-    font-size: 1rem;
-    font-weight: 300;
+.guide {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
 
+    width: 80%;
+    margin: auto;
+
+    padding-bottom: 4vh;
+}
+
+.guide p {
+    line-height: 1.25;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.guide .textures {
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    justify-content: space-around;
+}
+
+.guide .textures h1 {
+    transform: translateY(-25%);
+}
+
+.guide .textures img {
+    position: relative;
+    width: 165px;
+    height: 165px;
+}
+
+.textures p {
+    font-size: 0.8em;
     text-align: center;
+    opacity: 0.5;
+    font-style: italic;
 }

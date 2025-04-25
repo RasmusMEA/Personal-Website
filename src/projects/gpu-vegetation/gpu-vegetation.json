@@ -12,5 +12,13 @@
         "HLSL"
     ],
     "slug": "gpu-vegetation",
-    "app": "GpuVegetation"
+    "app": "GpuVegetation",
+    "updates": [
+        {
+            "title": "GPU Vegetation - Project Page creation",
+            "img": "gpu-vegetation-tool.gif",
+            "date": "2025-04-21",
+            "description": "Initial creation of GPU Vegetation project page, including the tool description, images, explanation of how it works."
+        }
+    ]
 }
