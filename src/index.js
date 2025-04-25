@@ -49,7 +49,7 @@ const router = createHashRouter(
             <Route path={`${project.slug}`} key={project.slug} element={
               <>
                 {React.createElement(lazy(() => import(`./projects/${project.slug}/${project.app}.jsx`)))}
-								<Outlet />
+				<Outlet />
               </>
             } />
           )

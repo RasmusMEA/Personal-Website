@@ -125,6 +125,17 @@
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.hlink {
+    color: rgb(165, 207, 255);
+    text-decoration: underline;
+    transition: all 0.2s ease;
+    text-decoration-color: rgba(165, 207, 255, 0.5);
+}
+
+.hlink:hover {
+    text-decoration-color: rgb(165, 207, 255);
+}
+
 time {
     font-weight: 400;
     color: #757575;

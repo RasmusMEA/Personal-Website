@@ -17,3 +17,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 400;
+
+}
+
+h3 {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
